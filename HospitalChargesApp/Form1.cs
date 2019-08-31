@@ -17,9 +17,14 @@ namespace HospitalChargesApp
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private int CalcStayCharges()
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            CalcStayCharges();
         }
     }
 }
