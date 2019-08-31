@@ -14,6 +14,7 @@ namespace HospitalChargesApp
     {
         int BaseCharge;
         int MiscCharges;
+        int TotalCharges;
 
         public Form1()
         {
@@ -39,13 +40,22 @@ namespace HospitalChargesApp
 
         private int CalcTotalCharges()
         {
-            int TotalCharges = BaseCharge + MiscCharges;
+            TotalCharges = BaseCharge + MiscCharges;
             return TotalCharges;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+            
+
+        }
+
+        private void buttonCalculations_Click(object sender, EventArgs e)
+        {
             CalcStayCharges();
+            CalcMiscCharges();
+            CalcTotalCharges();
+            MessageBox.Show("Base Charge: " + BaseCharge.ToString() + "\nMiscellaneous Charges: " + MiscCharges.ToString() + "\nTotal Charges: " +TotalCharges.ToString());
         }
     }
 }

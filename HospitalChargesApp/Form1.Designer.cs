@@ -114,6 +114,7 @@
             this.buttonCalculations.TabIndex = 8;
             this.buttonCalculations.Text = "Calculate Charges";
             this.buttonCalculations.UseVisualStyleBackColor = true;
+            this.buttonCalculations.Click += new System.EventHandler(this.buttonCalculations_Click);
             // 
             // label5
             // 
