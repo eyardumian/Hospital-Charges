@@ -24,6 +24,15 @@ namespace HospitalChargesApp
             return BaseCharge; 
         }
 
+        private int CalcMiscCharges()
+        {
+            int MedCharge = Convert.ToInt32(textBoxMedCharges.Text);
+            int SurgCharges = Convert.ToInt32(textBoxSurCharges.Text);
+            int LabFees = Convert.ToInt32(textBoxLabFees.Text);
+            int PhysRehabCharges = Convert.ToInt32(textBoxPhysRehab.Text);
+            int MiscCharges = MedCharge + SurgCharges + LabFees + PhysRehabCharges;
+            return MiscCharges;
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
