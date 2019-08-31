@@ -19,8 +19,11 @@ namespace HospitalChargesApp
 
         private int CalcStayCharges()
         {
-
+            int NumDays = Convert.ToInt32(textBoxNumDays.Text);
+            int BaseCharge = NumDays * 350;
+            return BaseCharge; 
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
